@@ -20,12 +20,6 @@
 .container {
 	margin-top: 50px;}
 
-#aboutImage img {
-    margin-bottom: 50px;
-    max-width: 100%;
-    height: auto;
-}
-
 .timedate {
 	float: left;
 }
@@ -87,7 +81,22 @@ button {
 	padding: 20px;
 }
 
+#aboutImage img {
+    margin-bottom: 50px;
+   	width: 80%;
+    height: 80%;
+}
 
+#aboutImage img {
+  -webkit-animation:spin 60s linear infinite;
+  -moz-animation:spin 60s linear infinite;
+  animation:spin 60s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+}
 
 /* #Page Styles
 ================================================== */
