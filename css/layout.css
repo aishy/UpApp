@@ -28,7 +28,10 @@
 	float: right;
 }
 
-
+h1 {
+	font-size: 74px;
+	margin-bottom: 40px;
+}
 
 ul, li {
   display: inline-block;
