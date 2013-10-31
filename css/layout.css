@@ -73,8 +73,9 @@ h1 {
 .upcomingappointments li {
 	margin-top: 20px;
 	margin-bottom: 10px;
-   display: inline-block;
+  display: inline-block;
   list-style: none;
+  border: 1px solid black;
 }
 
 footer {
@@ -193,7 +194,12 @@ a:hover .icon-tumblr{
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+    .email {
+      text-align: left;
+      padding-left: 20px !important;
+    }
+  }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
