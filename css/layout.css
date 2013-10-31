@@ -48,8 +48,8 @@ h1 {
 
 .currentappointment {
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 80px;
+	margin-top: 80px;
+	margin-bottom: 90px;
 }
 
 #what {
@@ -65,9 +65,10 @@ h1 {
 
 .upcomingappointments {
 	text-align: center;
-  border:1px solid black;
-	/*background-color: black;
-	color: white;*/
+}
+
+.upcomingappointments p {
+  margin: 0;
 }
 
 .upcomingappointments li {
@@ -75,7 +76,9 @@ h1 {
 	margin-bottom: 10px;
   display: inline-block;
   list-style: none;
-  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 30px;
 }
 
 footer {
@@ -92,12 +95,33 @@ button {
     height: 40px;
     width: 40px;
     border-radius: 40px;
-    border: 1px solid #000;
+    border: none;
     text-align: center;
+    background: white;
+}
+
+button:hover {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    color: white;
+    background:  #c0c0c0
+}
+
+button:focus {
+  outline: none;
 }
 
 .refresh {
+  padding-top: 20px;
 	text-align: center;
+}
+
+.icon-spinner {
+  font-size: 120%;
+  color: black;
 }
 
 #aboutImage img {
@@ -155,6 +179,9 @@ button {
 	content: "\e602";
 }
 
+.icon-spinner:before {
+  content: "\e603";
+}
 
 .screen-reader {
     position: absolute;
